@@ -8,7 +8,7 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 app.use(express.json())
 
-const uri = "mongodb+srv://sahlataher:DB%40133@cluster0.ayfddgo.mongodb.net/?appName=Cluster0"
+const uri = process.env.MONGO_URI
 
 MongoClient.connect(uri)
   .then(client => {
