@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Book Manager</title>
+  </head>
+  <body>
+<h1> BOOK COLLECTION </h1>
+    <h2>Your Library</h2>
+
+<ul class="books">
+  <!-- Loop through quotes -->
+  <% for(var i = 0; i < books.length; i++) {%>
+  <li class="book">
+    <!-- Output name from the iterated quote object -->
+    <span><%= books[i].name %></span>:
+    <!-- Output quote from the iterated quote object -->
+    <span><%= books[i].genre %></span>
+  </li>
+  <% } %>
+
+</ul>
+ <div>
+      <h2>Add book</h2>
+    <form action="/books" method="POST">
+      <input type="text" placeholder="Title" , name="name" />
+    <input type="text" placeholder="Genre" name="genre" />
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+
+    <div>
+      <h2>Edit book</h2>
+   <form id="update-button">
+  <input type="text" placeholder="Enter book title" name="oldName" />
+  <input type="text" placeholder="Updated title" name="newName" />
+  <input type="text" placeholder="Updated genre" name="newGenre" />
+  <button type="submit">Edit Book</button>
+</form>
+</div>
+<div>
+      <h2>Delete book</h2>
+      <form id="delete-button">
+        <input type="text" placeholder="Title" name="deleteName" />
+        <button type="submit">Submit</button>
+</div>
+    <script src="/main.js"></script>
+    <link rel="stylesheet" href="/styles.css">
+  </body>
+</html>

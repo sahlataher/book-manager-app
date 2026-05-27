@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #c3b291;
+}
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #700767;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #700767;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #fff8e8;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(173, 62, 108, 0.1);
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #e3c1ed;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #b64a9f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #8245a0;
+}
+
+form {
+  background: rgb(162, 143, 170);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
