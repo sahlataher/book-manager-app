@@ -61,8 +61,7 @@ app.delete('/books', (req, res) => {
     })
      .catch(error => console.error(error))
 })
-app.listen(PORT, () =>
-     console.log(`listening on ${PORT}`
-     ))
-    })
+
+    app.listen(PORT, () => console.log(`listening on ${PORT}`))
+  })
   .catch(error => console.error(error))
