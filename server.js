@@ -2,6 +2,7 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const { MongoClient, ServerApiVersion } = require('mongodb')
+const PORT = process.env.PORT || 3000
 
 app.use(express.urlencoded({ extended: true }))
 app.set('view engine', 'ejs')
@@ -60,8 +61,8 @@ app.delete('/books', (req, res) => {
     })
      .catch(error => console.error(error))
 })
-app.listen(3000, () =>
-    console.log('listening on 3000'))
-})
+app.listen(PORT, () =>
+     console.log(`listening on ${PORT}`
+     ))
         
   .catch(error => console.error(error))
